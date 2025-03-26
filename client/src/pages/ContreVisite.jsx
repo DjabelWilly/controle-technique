@@ -5,7 +5,7 @@ const ContreVisite = () => {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col w-full md:w-2/3 justify-center min-h-screen mx-auto p-4 mb-8 md:mb-0 text-justify">
+      <div className="flex flex-col w-full md:w-2/3  min-h-screen mx-auto p-4 my-4 md:mb-0 text-justify">
         <h1 className="text-black text-center">
           Que faire en cas de contre-visite du contrôle technique ?
         </h1>

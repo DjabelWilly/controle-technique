@@ -97,6 +97,14 @@ const Navbar = () => {
                 🔸La contre-visite
               </Link>
             </li>
+            <li>
+              <Link
+                to="/disclaimer"
+                className="block py-2 text-black hover:bg-stone-200"
+              >
+                🔸Utilisation des données
+              </Link>
+            </li>
           </ul>
         )}
       </div>
