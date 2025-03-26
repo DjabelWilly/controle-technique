@@ -1,4 +1,4 @@
-# 🛠️ Contrôle Technique Locator
+# Contrôle Technique
 
 Une application qui permet de rechercher les centres de contrôle technique en fonction d'une ville en France. Elle affiche les résultats sous forme de liste et de carte interactive.
 
@@ -33,6 +33,6 @@ Une application qui permet de rechercher les centres de contrôle technique en f
 Clonez le projet et installez les dépendances :
 
 ```bash
-git clone https://github.com/votre-repo/controle-technique-locator.git
+git clone https://github.com/votre-repo/controle-technique.git
 cd controle-technique
 npm install

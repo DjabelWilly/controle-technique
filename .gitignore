@@ -26,9 +26,6 @@ dist/
 build/
 out/
 
-# Ignorer les fichiers de tests de Jest
-coverage/
-
 # Ignorer les fichiers d’IDE (VSCode, JetBrains, etc.)
 .vscode/
 .idea/
@@ -37,7 +34,4 @@ coverage/
 # Ignorer les fichiers système
 .DS_Store
 Thumbs.db
-
-# Ignorer les fichiers de déploiement
-.vercel/
 

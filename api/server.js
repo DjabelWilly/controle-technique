@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Route pour rechercher les centres de contrôle technique
-// Récupère du frontend le nom de la ville (place) et l'envoie dans le paramètre de l'url
+// Récupère du frontend le nom de la ville (place) et le passe dans le paramètre de l'url
 app.get("/centres", async (req, res) => {
     const { place } = req.query;
     console.log("📍 Ville reçue du frontend:", place);
