@@ -31,6 +31,11 @@ h1 {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
 
 h2 {
   font-size: 1.8rem;
@@ -40,6 +45,11 @@ h2 {
 @media screen and (max-width: 560px) {
   h2 {
     font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  h2 {
+    font-size: 1.1rem;
   }
 }
 
