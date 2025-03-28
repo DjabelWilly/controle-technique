@@ -90,7 +90,7 @@ const Home = () => {
       )}
 
       {/* Contenu de la page */}
-      <div className="relative mt-6 md:mt-12 p-2 ">
+      <div className="relative mt-6 md:mt-10 p-2 ">
         {centres.length === 0 && (
           <h1 className="text-white text-center">
             Trouver le contrôle technique le plus proche au meilleur prix!
@@ -102,18 +102,18 @@ const Home = () => {
 
         {/* Affichage du message d'erreur */}
         {message && (
-          <p className="text-red-500 bg-black text-lg text-center my-3 w-full md:w-96 mx-auto p-2 rounded-xl">
+          <p className="text-red-500 text-lg text-center max-w-md mx-auto rounded-md my-2 p-2 bg-black">
             {message}
           </p>
         )}
 
         {/* Affichage des résultats */}
-        <div className=" flex flex-col items-center justify-center md:items-start md:flex-row md:flex-wrap mt-8 gap-3">
+        <div className=" flex flex-col items-center justify-center md:items-start md:flex-row md:flex-wrap w-full mt-8 gap-3">
           <ul>
             {centres.map((centre, index) => (
               <li
                 key={index}
-                className="bg-blue-100 text-black border border-stone-300 text-start mx-auto p-2 mb-3 rounded-md hover:cursor-pointer hover:bg-blue-200"
+                className="bg-blue-100 hover:cursor-pointer hover:bg-blue-200 text-black border border-stone-300 text-start mx-auto p-2 mb-3 rounded-md "
                 onMouseOver={() => setSelectedCentre(centre)} // Selectionne le centre survolé
                 onMouseLeave={() => setSelectedCentre(null)} // Reset le centre survolé lorsque la souris quitte
               >
@@ -140,7 +140,7 @@ const Home = () => {
                     rel="noopener noreferrer"
                     className="text-blue-500 underline underline-offset-2 hover:text-blue-800"
                   >
-                    {formatURL(centre.cct_url)}
+                    site web
                   </a>
                 ) : (
                   ""

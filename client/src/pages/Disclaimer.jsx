@@ -6,7 +6,7 @@ const Disclaimer = () => {
       <Navbar />
       <div className="flex flex-col w-full md:w-2/3  min-h-screen mx-auto p-4 my-4 md:mb-0 text-justify">
         <h1 className="text-black text-center">
-          Comment utiliser l'application ?
+          Comment utiliser les données ?
         </h1>
         <p className="text-black text-lg mb-4 px-2">
           Cette application utilise des données publiques du gourvernement.
