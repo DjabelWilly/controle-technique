@@ -86,12 +86,12 @@ const Searchbar = ({ onResults, setMessage }) => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col justify-center md:flex-row items-center p-2 pb-2 w-3/4 lg:w-2/3  mx-auto"
+      className="flex flex-col justify-center md:flex-row items-center p-2 pb-2 w-3/4 md:w-full lg:w-2/3 mx-auto"
     >
       <select
         value={selectedDepartment}
         onChange={(e) => setSelectedDepartment(e.target.value)}
-        className="w-full mt-2 p-3 md:mr-3 bg-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700"
+        className="w-full mt-2 p-3 md:mr-3 bg-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700 text-sm md:text-base"
       >
         <option value="">Sélectionnez un département</option>
         {departments.map((dept, index) => (
@@ -104,7 +104,7 @@ const Searchbar = ({ onResults, setMessage }) => {
       <select
         value={selectedCity}
         onChange={(e) => setSelectedCity(e.target.value)}
-        className="w-full mt-2 p-3 bg-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700"
+        className="w-full mt-2 p-3 bg-white border border-gray-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-700 text-sm md:text-base"
         disabled={!selectedDepartment}
       >
         <option value="">Sélectionnez une ville</option>
